@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library inventory</title>
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src ="./inventory.js" defer></script>
+
+</head>
+<body>
+    <div class="d-flex justify-content-between p-3">
+    <button class = "btn btn-primary">Home</button>
+    <button class = "btn btn-success">Profile</button>
+    </div>
+
+    <h1 style="text-align: center;">Library Inventory</h1>
+    
+<main>
+    <section class="inventory-controls">
+        <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Book Details</th>
+            <th>Quantity</th>
+            <th>Location</th>
+        </tr>
+    </thead>
+
+    <tbody id="inventoryTable">
+
+    </tbody>
+
+</table>
+
+
+            <form class="search" action="/search" method="GET">
+
+            <label for="searchInput">search</label>
+        
+            <input type="search" id="searchInput" name="query" placeholder="Book...
+        ">
+             <button type="submit">Find</button>
+        </form>
+
+
+    </section>
+</main>
+</body>
+</html>
+
