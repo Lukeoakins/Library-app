@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="app.js" defer></script>
+    <script src="logApp.js" defer></script>
     <title>Log in</title>
 </head>
 <body>
     <div class="homeButton">
-        <button type="button" class="btn btn-primary">Home</button>
+        <a href="user-hompage-html.html" ><button type="button" class="btn btn-primary">Home</button></a>
         <button type="button" class="btn btn-success">Profile</button>
     </div>
     <div class="login-title">
@@ -27,6 +27,10 @@
     </div>
     <div class="submitreset-buttons">
         <button type="button" class="btn btn-success btn-lg" id="submitButton">submit</button>
+    </div>
+    <div id="errorpopup">
+        <p>Error when doing the password.</p>
+        <p>Please ensure password is at least 6 characters long</p>
     </div>
 </body>
 </html>
