@@ -10,13 +10,13 @@
 
     <!-- Top Navigation Bar-->
     <header class="d-flex justify-content-between p-3">
-        <a href=""><button class="btn btn-primary">Home</button></a> <!-- the <a> tags are so the href links to other html pages can be added later-->
+        <a href="user-hompage-html.html"><button class="btn btn-primary">Home</button></a> <!-- the <a> tags are so the href links to other html pages can be added later-->
         <form role="search" class="d-flex justify-content-center" style="padding-top: 50px">
             <input type="search" name="q" class="form-control me-2" placeholder="Search Book..." aria-label="Search" style="width: 500px">
             <button type="submit" class="btn btn-outline-success">Search Book</button>     
         </form>
 
-        <a href=""> <button class="btn btn-success">Profile</button></a>
+        <a href="index.html"> <button class="btn btn-success">Profile</button></a>
     </header>
 
     <main class="container-fluid mt-5">
@@ -28,7 +28,7 @@
                     <div class="card-body p-4">
                         <h2 class="card-title mb-4">Add Book:</h2>
 
-                        <form action="#" method="post">
+                        <form id="add-book-form" action="#" method="post">
                             <div class="mb-4">
                                 <label for="title" class="form-label fs-4">Title:</label>
                                 <input type="text" id="title" name="title" class="form-control" required>
@@ -42,6 +42,7 @@
                                 <textarea id="blurb" name="blurb" class="form-control" rows="6"></textarea>
                             </div>
                             <button type="submit" class="btn btn-light btn-lg">+ Add Book</button>
+                            <div id="add-book-message" role="alert"></div>
                         </form>
                     </div>
                 </div>
@@ -53,10 +54,8 @@
                 <a href=""><button class="btn shadow-sm btn-lg">Stock</button></a>
                 <a href=""><button class="btn shadow-sm btn-lg">Lend a Book</button></a>
              </nav>
-
-         
-
+        </div>
     </main>
-    
+    <script src="staff-homepage.js"></script>
 </body>
 </html>
