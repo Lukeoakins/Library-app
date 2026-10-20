@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Staff Homepage</title>
+</head>
+<body class="p-3">
+
+    <!-- Top Navigation Bar-->
+    <header class="d-flex justify-content-between p-3">
+        <a href=""><button class="btn btn-primary">Home</button></a> <!-- the <a> tags are so the href links to other html pages can be added later-->
+        <form role="search" class="d-flex justify-content-center" style="padding-top: 50px">
+            <input type="search" name="q" class="form-control me-2" placeholder="Search Book..." aria-label="Search" style="width: 500px">
+            <button type="submit" class="btn btn-outline-success">Search Book</button>     
+        </form>
+
+        <a href=""> <button class="btn btn-success">Profile</button></a>
+    </header>
+
+    <main class="container-fluid mt-5">
+        <div class="row">
+
+            <!-- Left: Add Book Form -->
+            <section id="add-book" class="col-12 col-md-5">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h2 class="card-title mb-4">Add Book:</h2>
+
+                        <form action="#" method="post">
+                            <div class="mb-4">
+                                <label for="title" class="form-label fs-4">Title:</label>
+                                <input type="text" id="title" name="title" class="form-control" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="author" class="form-label fs-4">Author:</label>
+                                <input type="text" id="author" name="author" class="form-control" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="blurb" class="form-label fs-4">Blurb:</label>
+                                <textarea id="blurb" name="blurb" class="form-control" rows="6"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-light btn-lg">+ Add Book</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+                <!-- Right: Staff action buttons-->
+             <nav id="staff-actions" class= "col-12 col-md-7 mt-4 mt-md-0 px-md-5 d-grid gap-4 align-content-start" aria-label="Staff Actions">
+                <a href=""><button class="btn shadow-sm btn-lg">Add/Remove Book</button></a>
+                <a href=""><button class="btn shadow-sm btn-lg">Stock</button></a>
+                <a href=""><button class="btn shadow-sm btn-lg">Lend a Book</button></a>
+             </nav>
+
+         
+
+    </main>
+    
+</body>
+</html>
