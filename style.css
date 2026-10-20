@@ -1,18 +1,24 @@
 .login-title{
         display: flex;
         justify-content: center;
+        padding-top: 10vh;
         padding-bottom: 40px;
         font-size: 200%;
         
 }
 
-body{
-    padding-top: 15vh;
-}
+
 
 .submitreset-buttons{
     display: flex;
     justify-content: center;
-    padding-top:  20px;
+    padding-top:  10vh;
+    padding-left: 60vh;
 
+}
+
+.homeButton{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
